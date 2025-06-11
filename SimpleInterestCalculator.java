@@ -2,21 +2,8 @@ import java.util.Scanner;
 
 public class SimpleInterestCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the principal amount: ");
-        double principal = scanner.nextDouble();
-
-        System.out.print("Enter the annual interest rate (in %): ");
-        double rate = scanner.nextDouble();
-
-        System.out.print("Enter the time (in years): ");
-        double time = scanner.nextDouble();
-
-        double simpleInterest = (principal * rate * time) / 100;
-
-        System.out.println("The calculated simple interest is: " + simpleInterest);
-
-        scanner.close();
+        int p=100,r=5,t=5;
+        int si=(p*t*r)/100;
+        System.out.println("Simple Interest= ", + si);
     }
 }
